@@ -42,7 +42,6 @@ class Create extends Component {
             </h3>
           </div>
           <div className="panel-body">
-            <h4><Link to="/"><span className="glyphicon glyphicon-th-list" aria-hidden="true"></span>  back to Stat List</Link></h4>
             <form onSubmit={this.onSubmit}>
               <div className="form-group">
                 <label htmlFor="stadium">Stadium:</label>
@@ -71,6 +70,7 @@ class Create extends Component {
               <button type="submit" className="btn btn-default">Submit</button>
             </form>
           </div>
+          <h4><Link to="/"><span className="glyphicon glyphicon-th-list" aria-hidden="true"></span>  back to Stat List</Link></h4>
         </div>
       </div>
         );
