@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import Nav from './Nav';
 
 class Create extends Component {
 
@@ -33,6 +34,9 @@ class Create extends Component {
     render() {
         const { stadium, date, first, second, third, fourth } = this.state;
         return (
+            <div>
+            
+                <Nav />
             <div className="container">
                     
         <div className="panel panel-default">
@@ -72,6 +76,7 @@ class Create extends Component {
           </div>
           <h4><Link to="/"><span className="glyphicon glyphicon-th-list" aria-hidden="true"></span>  back to Stat List</Link></h4>
         </div>
+      </div>
       </div>
         );
     }

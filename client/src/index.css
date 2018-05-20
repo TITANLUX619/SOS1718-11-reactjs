@@ -4,16 +4,6 @@ body {
   font-family: sans-serif;
 }
 
-a:link {
-  text-decoration: none;
-  color: grey;
-}
-
-a:visited {
-  text-decoration: none;
-  color: grey;
-}
-
 a:active {
   text-decoration: none;
   color: #26a69a;
