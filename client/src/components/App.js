@@ -16,7 +16,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://178.62.56.206:8080/api/v2/basketball-stats')
+        axios.get('https://sos1718-11.herokuapp.com/api/v2/basketball-stats')
             .then(res => {
                 this.setState({ stats: res.data });
                 console.log(this.state.stats);

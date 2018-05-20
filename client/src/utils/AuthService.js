@@ -5,7 +5,7 @@ const ACCESS_TOKEN_KEY = 'access_token';
 
 const CLIENT_ID = '7IevwNPhuuc9TOxaITKxt0DYYVNzZIIW';
 const CLIENT_DOMAIN = 'antlopsou.eu.auth0.com';
-const REDIRECT = 'http://178.62.56.206:8080/callback';
+const REDIRECT = 'https://sos171811als-sos171811als.c9users.io/callback';
 const SCOPE = 'openid';
 const AUDIENCE = 'https://antlopsou.eu.auth0.com/userinfo';
 

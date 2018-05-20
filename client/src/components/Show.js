@@ -15,7 +15,7 @@ class Show extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://178.62.56.206:8080/api/v2/basketball-stats/' + this.props.match.params['stadium'] + '/' + this.props.match.params['date'])
+        axios.get('https://sos1718-11.herokuapp.com/api/v2/basketball-stats/' + this.props.match.params['stadium'] + '/' + this.props.match.params['date'])
             .then(res => {
                 this.setState({ stat: res.data });
                 console.log(this.state.stat);
@@ -24,7 +24,7 @@ class Show extends Component {
 
     delete(stadium, date) {
         console.log(stadium, date);
-        axios.delete('http://178.62.56.206:8080/api/v2/basketball-stats/' + stadium + '/' + date)
+        axios.delete('https://sos1718-11.herokuapp.com/api/v2/basketball-stats/' + stadium + '/' + date)
             .then((result) => {
                 this.props.history.push("/")
             });

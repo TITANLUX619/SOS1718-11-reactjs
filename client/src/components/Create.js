@@ -25,7 +25,7 @@ class Create extends Component {
     onSubmit = (e) => {
         e.preventDefault();
         const { stadium, date, first, second, third, fourth } = this.state;
-        axios.post('http://178.62.56.206:16778/api/v2/basketball-stats', { stadium, date, first, second, third, fourth })
+        axios.post('https://sos1718-11.herokuapp.com//api/v2/basketball-stats', { stadium, date, first, second, third, fourth })
             .then((result) => {
                 this.props.history.push("/")
             });
